@@ -62,12 +62,12 @@
     "directories": {
       "dist": "dist/amd"
     },
-    "dependencies": {},
+    "dependencies": {
+      "eonasdan-bootstrap-datetimepicker": "^4.15.35"
+    },
     "devDependencies": {
       "aurelia-polyfills": "^1.0.0-beta.1.1.0"
     }
   },
-  "dependencies": {
-    "eonasdan-bootstrap-datetimepicker": "^4.15.35"
-  }
+  "dependencies": {}
 }

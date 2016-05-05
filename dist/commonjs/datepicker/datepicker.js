@@ -13,7 +13,7 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-require('Eonasdan/bootstrap-datetimepicker');
+require('eonasdan-bootstrap-datetimepicker');
 
 var _moment = require('moment');
 

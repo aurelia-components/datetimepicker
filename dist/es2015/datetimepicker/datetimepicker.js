@@ -45,7 +45,7 @@ function _initializerWarningHelper(descriptor, context) {
 
 import { inject, customElement, bindable, bindingMode } from 'aurelia-framework';
 import $ from 'jquery';
-import 'Eonasdan/bootstrap-datetimepicker';
+import 'eonasdan-bootstrap-datetimepicker';
 import moment from 'moment';
 import { customElementHelper } from '../utils/custom-element-helper';
 

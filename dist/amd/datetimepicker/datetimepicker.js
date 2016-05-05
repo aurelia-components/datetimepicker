@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/custom-element-helper', 'Eonasdan/bootstrap-datetimepicker'], function (exports, _aureliaFramework, _jquery, _moment, _customElementHelper) {
+define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/custom-element-helper', 'eonasdan-bootstrap-datetimepicker'], function (exports, _aureliaFramework, _jquery, _moment, _customElementHelper) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
