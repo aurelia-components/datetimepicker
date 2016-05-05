@@ -6,24 +6,12 @@ var compilerOptions = require('../babel-options');
 var assign = Object.assign || require('object.assign');
 var pug = require('gulp-pug');
 
-var sass = require('gulp-ruby-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-
-
 gulp.task('build-html', function () {
   return gulp.src(paths.html)
     .pipe(gulp.dest(paths.output + 'es2015'))
     .pipe(gulp.dest(paths.output + 'commonjs'))
     .pipe(gulp.dest(paths.output + 'amd'))
     .pipe(gulp.dest(paths.output + 'system'));
-});
-
-gulp.task('compile-sass', function () {
-  sass('src/styles.scss', {sourcemap: true, style: 'compact'})
-    .pipe(autoprefixer("last 1 version", "> 1%", "ie 8", "ie 7"))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('src'));
 });
 
 gulp.task('build-css', function () {
@@ -62,7 +50,6 @@ gulp.task('build', function (callback) {
   return runSequence(
     'clean',
     'compile-pug',
-    'compile-sass',
     ['build-html', 'build-css', 'build-es2015', 'build-commonjs', 'build-amd', 'build-system'],
     callback
   );

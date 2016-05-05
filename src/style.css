@@ -1,5 +1,3 @@
-@import "../jspm_packages/npm/eonasdan-bootstrap-datetimepicker@4.15.35/build/css/bootstrap-datetimepicker.css";
-
 .input-group.date .input-group-addon.cursor-readonly{
   cursor: auto;
 }
