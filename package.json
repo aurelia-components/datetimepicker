@@ -36,6 +36,7 @@
     "gulp": "^3.8.10",
     "gulp-babel": "^6.1.2",
     "gulp-bump": "^0.3.1",
+    "gulp-concat-css": "^2.2.0",
     "gulp-eslint": "^1.0.0",
     "gulp-pug": "^2.0.0",
     "gulp-yuidoc": "^0.1.2",

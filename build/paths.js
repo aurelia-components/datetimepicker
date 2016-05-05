@@ -6,8 +6,8 @@ module.exports = {
   source: appRoot + '**/*.js',
   html: appRoot + '**/*.html',
   pug: appRoot + '**/*.jade', //TODO: rename .jade files to .pug
-  //style: 'styles/**/*.css',
-  css: appRoot + '**/*.css',
+  cssBundle: 'src/bundle.css',
+  //css: appRoot + '**/*.css',
   less: 'less/**/*.less',
   sass: 'scss/**/*.scss',
   output: outputRoot,

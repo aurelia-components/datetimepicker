@@ -5,6 +5,7 @@ var paths = require('../paths');
 var compilerOptions = require('../babel-options');
 var assign = Object.assign || require('object.assign');
 var pug = require('gulp-pug');
+var concatCss = require('gulp-concat-css');
 
 gulp.task('build-html', function () {
   return gulp.src(paths.html)
@@ -14,8 +15,14 @@ gulp.task('build-html', function () {
     .pipe(gulp.dest(paths.output + 'system'));
 });
 
+gulp.task('concat-css', function () {
+  return gulp.src(['src/style.css', 'jspm_packages/npm/eonasdan-bootstrap-datetimepicker@4.15.35/build/css/bootstrap-datetimepicker.css'])
+    .pipe(concatCss("bundle.css"))
+    .pipe(gulp.dest('src/'));
+});
+
 gulp.task('build-css', function () {
-  return gulp.src(paths.css)
+  return gulp.src(paths.cssBundle)
     .pipe(gulp.dest(paths.output + 'es2015'))
     .pipe(gulp.dest(paths.output + 'commonjs'))
     .pipe(gulp.dest(paths.output + 'amd'))
@@ -49,7 +56,7 @@ gulp.task('build-system', function () {
 gulp.task('build', function (callback) {
   return runSequence(
     'clean',
-    'compile-pug',
+    ['compile-pug', 'concat-css'],
     ['build-html', 'build-css', 'build-es2015', 'build-commonjs', 'build-amd', 'build-system'],
     callback
   );
