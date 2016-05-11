@@ -1,6 +1,6 @@
 ﻿import {inject, customElement, bindable, bindingMode} from 'aurelia-framework';
 import $ from 'jquery';
-import 'eonasdan-bootstrap-datetimepicker';
+import 'Eonasdan/bootstrap-datetimepicker';
 import moment from 'moment';
 import {customElementHelper} from '../utils/custom-element-helper';
 
