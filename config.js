@@ -9,6 +9,7 @@ System.config({
   map: {
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.4",
     "eonasdan-bootstrap-datetimepicker": "npm:eonasdan-bootstrap-datetimepicker@4.15.35",
+    "jquery": "npm:jquery@2.2.3",
     "moment": "npm:moment@2.13.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
