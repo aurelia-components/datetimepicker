@@ -7,8 +7,9 @@ System.config({
   },
 
   map: {
-    "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.0",
+    "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.4",
     "eonasdan-bootstrap-datetimepicker": "npm:eonasdan-bootstrap-datetimepicker@4.15.35",
+    "moment": "npm:moment@2.13.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -16,7 +17,7 @@ System.config({
       "path-browserify": "npm:path-browserify@0.0.0"
     },
     "github:jspm/nodelibs-process@0.1.2": {
-      "process": "npm:process@0.11.2"
+      "process": "npm:process@0.11.3"
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
@@ -24,8 +25,8 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:aurelia-polyfills@1.0.0-beta.1.1.0": {
-      "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.0"
+    "npm:aurelia-polyfills@1.0.0-beta.1.1.4": {
+      "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2"
     },
     "npm:bootstrap@3.3.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -44,7 +45,7 @@ System.config({
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:process@0.11.2": {
+    "npm:process@0.11.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
     "npm:util@0.10.3": {
