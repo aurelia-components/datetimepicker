@@ -7,6 +7,7 @@ System.config({
   },
 
   map: {
+    "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@4.17.37",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.4",
     "eonasdan-bootstrap-datetimepicker": "npm:eonasdan-bootstrap-datetimepicker@4.15.35",
     "jquery": "npm:jquery@2.2.3",

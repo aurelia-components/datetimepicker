@@ -64,6 +64,7 @@
       "dist": "dist/amd"
     },
     "dependencies": {
+      "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.37",
       "eonasdan-bootstrap-datetimepicker": "^4.15.35",
       "jquery": "^2.2.3",
       "moment": "^2.13.0"
