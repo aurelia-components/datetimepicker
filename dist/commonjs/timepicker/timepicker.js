@@ -19,7 +19,7 @@ var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
-var _utils = require('utils');
+var _timespan = require('../utils/timespan');
 
 var _customElementHelper = require('../utils/custom-element-helper');
 
@@ -123,7 +123,7 @@ var Timepicker = exports.Timepicker = (_dec = (0, _aureliaFramework.customElemen
           element: el
         });
       } else {
-        var newTimespan = new _utils.Timespan(elVal);
+        var newTimespan = new _timespan.Timespan(elVal);
         var areSame = newTimespan.equals(_this.value);
         if (!areSame) {
           _this.value = newTimespan;

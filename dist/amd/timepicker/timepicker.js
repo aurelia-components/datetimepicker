@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-framework', 'jquery', 'moment', 'utils', '../utils/custom-element-helper', 'eonasdan-bootstrap-datetimepicker'], function (exports, _aureliaFramework, _jquery, _moment, _utils, _customElementHelper) {
+define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/timespan', '../utils/custom-element-helper', 'eonasdan-bootstrap-datetimepicker'], function (exports, _aureliaFramework, _jquery, _moment, _timespan, _customElementHelper) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -120,7 +120,7 @@ define(['exports', 'aurelia-framework', 'jquery', 'moment', 'utils', '../utils/c
             element: el
           });
         } else {
-          var newTimespan = new _utils.Timespan(elVal);
+          var newTimespan = new _timespan.Timespan(elVal);
           var areSame = newTimespan.equals(_this.value);
           if (!areSame) {
             _this.value = newTimespan;

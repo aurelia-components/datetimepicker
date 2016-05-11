@@ -2,7 +2,7 @@
 import $ from 'jquery';
 import 'eonasdan-bootstrap-datetimepicker';
 import moment from 'moment';
-import {Timespan} from 'utils';
+import {Timespan} from '../utils/timespan';
 import {customElementHelper} from '../utils/custom-element-helper';
 
 @customElement('timepicker')

@@ -47,7 +47,7 @@ import { inject, customElement, bindable, bindingMode } from 'aurelia-framework'
 import $ from 'jquery';
 import 'eonasdan-bootstrap-datetimepicker';
 import moment from 'moment';
-import { Timespan } from 'utils';
+import { Timespan } from '../utils/timespan';
 import { customElementHelper } from '../utils/custom-element-helper';
 
 export let Timepicker = (_dec = customElement('timepicker'), _dec2 = inject(Element), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = class Timepicker {
