@@ -65,11 +65,13 @@
     "dependencies": {
       "moment": "npm:moment@^2.13.0",
       "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.37",
-      "jquery": "npm:jquery@^2.2.3",
+      "jquery": "npm:jquery@^2.2.3"
     },
     "devDependencies": {
       "aurelia-polyfills": "^1.0.0-beta.1.1.0"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.13.0"
+  }
 }
