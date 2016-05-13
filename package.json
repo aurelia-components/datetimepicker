@@ -62,6 +62,10 @@
     "directories": {
       "dist": "dist/amd"
     },
+    peerDependencies: {
+      "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.37",
+      "moment": "npm:moment@^2.13.0"
+    },
     "dependencies": {
       "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.37",
       "moment": "npm:moment@^2.13.0"
