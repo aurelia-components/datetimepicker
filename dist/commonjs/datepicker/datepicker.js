@@ -140,13 +140,13 @@ var Datepicker = exports.Datepicker = (_dec = (0, _aureliaFramework.customElemen
   };
 
   Datepicker.prototype.valueChanged = function valueChanged(newValue, oldValue) {
-    if (newValue === null || newValue === undefined || newValue === false || newValue.isValid() !== true) {
+    if (newValue === null || newValue === undefined || newValue === false || (0, _moment2.default)(newValue).isValid() !== true) {
       var input = this.element.firstElementChild.firstElementChild;
       input.value = '';
       return;
     }
 
-    if (newValue.isSame(oldValue) && oldValue !== undefined) {
+    if ((0, _moment2.default)(newValue).isSame(oldValue) && oldValue !== undefined) {
       return;
     }
 

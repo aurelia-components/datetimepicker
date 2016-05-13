@@ -120,13 +120,13 @@ export let Datepicker = (_dec = customElement('datepicker'), _dec2 = inject(Elem
   }
 
   valueChanged(newValue, oldValue) {
-    if (newValue === null || newValue === undefined || newValue === false || newValue.isValid() !== true) {
+    if (newValue === null || newValue === undefined || newValue === false || moment(newValue).isValid() !== true) {
       let input = this.element.firstElementChild.firstElementChild;
       input.value = '';
       return;
     }
 
-    if (newValue.isSame(oldValue) && oldValue !== undefined) {
+    if (moment(newValue).isSame(oldValue) && oldValue !== undefined) {
       return;
     }
 

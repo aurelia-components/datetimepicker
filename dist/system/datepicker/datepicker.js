@@ -140,13 +140,13 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
         };
 
         Datepicker.prototype.valueChanged = function valueChanged(newValue, oldValue) {
-          if (newValue === null || newValue === undefined || newValue === false || newValue.isValid() !== true) {
+          if (newValue === null || newValue === undefined || newValue === false || moment(newValue).isValid() !== true) {
             var input = this.element.firstElementChild.firstElementChild;
             input.value = '';
             return;
           }
 
-          if (newValue.isSame(oldValue) && oldValue !== undefined) {
+          if (moment(newValue).isSame(oldValue) && oldValue !== undefined) {
             return;
           }
 
