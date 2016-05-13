@@ -110,11 +110,12 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
           }
 
           if (this.icon) {
-            var _div = this.element.firstElementChild;
+            var div = this.element.firstElementChild;
+            this.$element = $(div);
           } else {
-            var _div2 = this.element.children[1].firstElementChild;
+            var _div = this.element.children[1].firstElementChild;
+            this.$element = $(_div);
           }
-          this.$element = $(div);
 
           this.options = this.options || {};
           if (this.options.format !== undefined) {

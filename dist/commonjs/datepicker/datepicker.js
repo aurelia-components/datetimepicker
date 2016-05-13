@@ -112,11 +112,12 @@ var Datepicker = exports.Datepicker = (_dec = (0, _aureliaFramework.customElemen
     }
 
     if (this.icon) {
-      var _div = this.element.firstElementChild;
+      var div = this.element.firstElementChild;
+      this.$element = (0, _jquery2.default)(div);
     } else {
-      var _div2 = this.element.children[1].firstElementChild;
+      var _div = this.element.children[1].firstElementChild;
+      this.$element = (0, _jquery2.default)(_div);
     }
-    this.$element = (0, _jquery2.default)(div);
 
     this.options = this.options || {};
     if (this.options.format !== undefined) {
