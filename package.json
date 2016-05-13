@@ -57,21 +57,21 @@
     "yargs": "^2.1.1"
   },
   "jspm": {
+    "registry": "npm",
     "main": "index",
     "format": "amd",
     "directories": {
       "dist": "dist/amd"
     },
-    "peerDependencies": {
-      "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.37",
-      "moment": "npm:moment@^2.13.0"
-    },
     "dependencies": {
-      "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.37",
-      "moment": "npm:moment@^2.13.0"
+      "eonasdan-bootstrap-datetimepicker": "^4.15.35",
+      "moment": "^2.13.0"
     },
     "devDependencies": {
-      "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.1.0"
+      "aurelia-polyfills": "^1.0.0-beta.1.1.0",
+      "babel": "babel-core@^5.8.24",
+      "babel-runtime": "^5.8.24",
+      "core-js": "^1.1.4"
     }
   }
 }

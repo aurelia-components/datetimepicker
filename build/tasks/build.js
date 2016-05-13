@@ -16,7 +16,7 @@ gulp.task('build-html', function () {
 });
 
 gulp.task('concat-css', function () {
-  return gulp.src(['src/style.css', 'jspm_packages/github/Eonasdan/bootstrap-datetimepicker@4.17.37/build/css/bootstrap-datetimepicker.css'])
+  return gulp.src(['src/style.css', 'jspm_packages/npm/eonasdan-bootstrap-datetimepicker@4.15.35/build/css/bootstrap-datetimepicker.css'])
     .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('src/'));
 });
