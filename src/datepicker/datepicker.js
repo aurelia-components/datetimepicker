@@ -1,5 +1,5 @@
 ﻿import {inject, customElement, bindable, bindingMode} from 'aurelia-framework';
-import $ from 'jquery';
+import {$ as Jquery} from 'jquery';
 import 'eonasdan-bootstrap-datetimepicker';
 import moment from 'moment';
 import {customElementHelper} from '../utils/custom-element-helper';
@@ -43,18 +43,18 @@ export class Datepicker {
 
     if (this.icon) {
       let div = this.element.firstElementChild;
-      this.$element = $(div);
+      this.$element = jQuery(div);
     } else {
       let div = this.element.children[1].firstElementChild;
-      this.$element = $(div);
+      this.$element = jQuery(div);
     }
-    
+
 
     this.options = this.options || {};
     if (this.options.format !== undefined) {
       delete this.options.format;
     }
-    this.options = $.extend({}, defaultOpts, this.options);
+    this.options = jQuery.extend({}, defaultOpts, this.options);
 
     let datepicker = this.$element.datetimepicker(this.options);
 

@@ -11,8 +11,6 @@ var _aureliaFramework = require('aurelia-framework');
 
 var _jquery = require('jquery');
 
-var _jquery2 = _interopRequireDefault(_jquery);
-
 require('eonasdan-bootstrap-datetimepicker');
 
 var _moment = require('moment');
@@ -113,17 +111,17 @@ var Datepicker = exports.Datepicker = (_dec = (0, _aureliaFramework.customElemen
 
     if (this.icon) {
       var div = this.element.firstElementChild;
-      this.$element = (0, _jquery2.default)(div);
+      this.$element = jQuery(div);
     } else {
       var _div = this.element.children[1].firstElementChild;
-      this.$element = (0, _jquery2.default)(_div);
+      this.$element = jQuery(_div);
     }
 
     this.options = this.options || {};
     if (this.options.format !== undefined) {
       delete this.options.format;
     }
-    this.options = _jquery2.default.extend({}, defaultOpts, this.options);
+    this.options = jQuery.extend({}, defaultOpts, this.options);
 
     var datepicker = this.$element.datetimepicker(this.options);
 

@@ -1,7 +1,7 @@
 'use strict';
 
 System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepicker', 'moment', '../utils/custom-element-helper'], function (_export, _context) {
-  var inject, customElement, bindable, bindingMode, $, moment, customElementHelper, _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, Datepicker;
+  var inject, customElement, bindable, bindingMode, Jquery, moment, customElementHelper, _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, Datepicker;
 
   function _initDefineProp(target, property, descriptor, context) {
     if (!descriptor) return;
@@ -59,7 +59,7 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
       bindable = _aureliaFramework.bindable;
       bindingMode = _aureliaFramework.bindingMode;
     }, function (_jquery) {
-      $ = _jquery.default;
+      Jquery = _jquery.$;
     }, function (_eonasdanBootstrapDatetimepicker) {}, function (_moment) {
       moment = _moment.default;
     }, function (_utilsCustomElementHelper) {
@@ -111,17 +111,17 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
 
           if (this.icon) {
             var div = this.element.firstElementChild;
-            this.$element = $(div);
+            this.$element = jQuery(div);
           } else {
             var _div = this.element.children[1].firstElementChild;
-            this.$element = $(_div);
+            this.$element = jQuery(_div);
           }
 
           this.options = this.options || {};
           if (this.options.format !== undefined) {
             delete this.options.format;
           }
-          this.options = $.extend({}, defaultOpts, this.options);
+          this.options = jQuery.extend({}, defaultOpts, this.options);
 
           var datepicker = this.$element.datetimepicker(this.options);
 
