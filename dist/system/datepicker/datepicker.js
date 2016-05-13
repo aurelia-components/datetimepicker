@@ -110,12 +110,11 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
           }
 
           if (this.icon) {
-            var div = this.element.firstElementChild;
-            this.$element = $(div);
+            var _div = this.element.firstElementChild;
           } else {
-            var _div = this.element.children[1].firstElementChild;
-            this.$element = $(_div);
+            var _div2 = this.element.children[1].firstElementChild;
           }
+          this.$element = $(div);
 
           this.options = this.options || {};
           if (this.options.format !== undefined) {
@@ -123,9 +122,9 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
           }
           this.options = $.extend({}, defaultOpts, this.options);
 
-          this.datepicker = this.$element.datetimepicker(this.options);
+          var datepicker = this.$element.datetimepicker(this.options);
 
-          this.datepicker.on('dp.change', function (event) {
+          datepicker.on('dp.change', function (event) {
             var value = event.date;
             var el = _this.element;
             customElementHelper.dispatchEvent(el, 'change', {

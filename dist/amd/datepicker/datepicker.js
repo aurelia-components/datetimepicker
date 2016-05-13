@@ -111,12 +111,11 @@ define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/custom-ele
       }
 
       if (this.icon) {
-        var div = this.element.firstElementChild;
-        this.$element = (0, _jquery2.default)(div);
+        var _div = this.element.firstElementChild;
       } else {
-        var _div = this.element.children[1].firstElementChild;
-        this.$element = (0, _jquery2.default)(_div);
+        var _div2 = this.element.children[1].firstElementChild;
       }
+      this.$element = (0, _jquery2.default)(div);
 
       this.options = this.options || {};
       if (this.options.format !== undefined) {
@@ -124,9 +123,9 @@ define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/custom-ele
       }
       this.options = _jquery2.default.extend({}, defaultOpts, this.options);
 
-      this.datepicker = this.$element.datetimepicker(this.options);
+      var datepicker = this.$element.datetimepicker(this.options);
 
-      this.datepicker.on('dp.change', function (event) {
+      datepicker.on('dp.change', function (event) {
         var value = event.date;
         var el = _this.element;
         _customElementHelper.customElementHelper.dispatchEvent(el, 'change', {

@@ -91,11 +91,10 @@ export let Datepicker = (_dec = customElement('datepicker'), _dec2 = inject(Elem
 
     if (this.icon) {
       let div = this.element.firstElementChild;
-      this.$element = $(div);
     } else {
       let div = this.element.children[1].firstElementChild;
-      this.$element = $(div);
     }
+    this.$element = $(div);
 
     this.options = this.options || {};
     if (this.options.format !== undefined) {
@@ -103,9 +102,9 @@ export let Datepicker = (_dec = customElement('datepicker'), _dec2 = inject(Elem
     }
     this.options = $.extend({}, defaultOpts, this.options);
 
-    this.datepicker = this.$element.datetimepicker(this.options);
+    let datepicker = this.$element.datetimepicker(this.options);
 
-    this.datepicker.on('dp.change', event => {
+    datepicker.on('dp.change', event => {
       const value = event.date;
       const el = this.element;
       customElementHelper.dispatchEvent(el, 'change', {
