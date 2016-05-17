@@ -111,17 +111,17 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
 
           if (this.icon) {
             var div = this.element.firstElementChild;
-            this.$element = jQuery(div);
+            this.$element = Jquery(div);
           } else {
             var _div = this.element.children[1].firstElementChild;
-            this.$element = jQuery(_div);
+            this.$element = Jquery(_div);
           }
 
           this.options = this.options || {};
           if (this.options.format !== undefined) {
             delete this.options.format;
           }
-          this.options = jQuery.extend({}, defaultOpts, this.options);
+          this.options = Jquery.extend({}, defaultOpts, this.options);
 
           var datepicker = this.$element.datetimepicker(this.options);
 

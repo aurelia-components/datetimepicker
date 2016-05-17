@@ -43,18 +43,17 @@ export class Datepicker {
 
     if (this.icon) {
       let div = this.element.firstElementChild;
-      this.$element = jQuery(div);
+      this.$element = Jquery(div);
     } else {
       let div = this.element.children[1].firstElementChild;
-      this.$element = jQuery(div);
+      this.$element = Jquery(div);
     }
-
 
     this.options = this.options || {};
     if (this.options.format !== undefined) {
       delete this.options.format;
     }
-    this.options = jQuery.extend({}, defaultOpts, this.options);
+    this.options = Jquery.extend({}, defaultOpts, this.options);
 
     let datepicker = this.$element.datetimepicker(this.options);
 
