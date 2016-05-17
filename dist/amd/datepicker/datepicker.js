@@ -6,6 +6,8 @@ define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/custom-ele
   });
   exports.Datepicker = undefined;
 
+  var _jquery2 = _interopRequireDefault(_jquery);
+
   var _moment2 = _interopRequireDefault(_moment);
 
   function _interopRequireDefault(obj) {
@@ -110,17 +112,17 @@ define(['exports', 'aurelia-framework', 'jquery', 'moment', '../utils/custom-ele
 
       if (this.icon) {
         var div = this.element.firstElementChild;
-        this.$element = (0, _jquery.$)(div);
+        this.$element = (0, _jquery2.default)(div);
       } else {
         var _div = this.element.children[1].firstElementChild;
-        this.$element = (0, _jquery.$)(_div);
+        this.$element = (0, _jquery2.default)(_div);
       }
 
       this.options = this.options || {};
       if (this.options.format !== undefined) {
         delete this.options.format;
       }
-      this.options = _jquery.$.extend({}, defaultOpts, this.options);
+      this.options = _jquery2.default.extend({}, defaultOpts, this.options);
 
       var datepicker = this.$element.datetimepicker(this.options);
 
