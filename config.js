@@ -4,7 +4,7 @@ System.config({
   babelOptions: {
     "optional": [
       "runtime",
-      "optimisation.modules.system",
+      "optimisation.modules.system"
     ]
   },
   paths: {
@@ -18,6 +18,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
     "eonasdan-bootstrap-datetimepicker": "npm:eonasdan-bootstrap-datetimepicker@4.15.35",
+    "jquery": "npm:jquery@2.2.3",
     "moment": "npm:moment@2.13.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
