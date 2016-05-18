@@ -65,7 +65,7 @@
     },
     "dependencies": {
       "eonasdan-bootstrap-datetimepicker": "^4.15.35",
-      "jquery": "github:components/jquery@^2.2.1",
+      "jquery": "^2.2.3",
       "moment": "^2.13.0"
     },
     "devDependencies": {
