@@ -1,7 +1,7 @@
 'use strict';
 
-System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepicker', 'moment', '../utils/custom-element-helper'], function (_export, _context) {
-  var inject, customElement, bindable, bindingMode, $, moment, customElementHelper, _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, Datepicker;
+System.register(['aurelia-framework', 'eonasdan-bootstrap-datetimepicker', 'moment', '../utils/custom-element-helper', 'jquery'], function (_export, _context) {
+  var inject, customElement, bindable, bindingMode, moment, customElementHelper, $, _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, Datepicker;
 
   function _initDefineProp(target, property, descriptor, context) {
     if (!descriptor) return;
@@ -58,12 +58,12 @@ System.register(['aurelia-framework', 'jquery', 'eonasdan-bootstrap-datetimepick
       customElement = _aureliaFramework.customElement;
       bindable = _aureliaFramework.bindable;
       bindingMode = _aureliaFramework.bindingMode;
-    }, function (_jquery) {
-      $ = _jquery.default;
     }, function (_eonasdanBootstrapDatetimepicker) {}, function (_moment) {
       moment = _moment.default;
     }, function (_utilsCustomElementHelper) {
       customElementHelper = _utilsCustomElementHelper.customElementHelper;
+    }, function (_jquery) {
+      $ = _jquery.default;
     }],
     execute: function () {
       _export('Datepicker', Datepicker = (_dec = customElement('datepicker'), _dec2 = inject(Element), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {

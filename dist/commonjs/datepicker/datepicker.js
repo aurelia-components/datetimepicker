@@ -9,10 +9,6 @@ var _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor
 
 var _aureliaFramework = require('aurelia-framework');
 
-var _jquery = require('jquery');
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
 require('eonasdan-bootstrap-datetimepicker');
 
 var _moment = require('moment');
@@ -20,6 +16,10 @@ var _moment = require('moment');
 var _moment2 = _interopRequireDefault(_moment);
 
 var _customElementHelper = require('../utils/custom-element-helper');
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

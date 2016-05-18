@@ -13,7 +13,7 @@
   },
   "license": "CC0-1.0",
   "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
-  "main": "dist/commonjs/index.js",
+  "main": "dist/system/index.js",
   "repository": {
     "type": "git",
     "url": "http://github.com/aurelia/skeleton-plugin"
@@ -65,7 +65,7 @@
     },
     "dependencies": {
       "eonasdan-bootstrap-datetimepicker": "^4.15.35",
-      "jquery": "^2.2.3",
+      "jquery": "github:components/jquery@^2.2.1",
       "moment": "^2.13.0"
     },
     "devDependencies": {
