@@ -59,9 +59,9 @@
   "jspm": {
     "registry": "npm",
     "main": "index",
-    "format": "amd",
+    "format": "system",
     "directories": {
-      "dist": "dist/amd"
+      "dist": "dist/system"
     },
     "dependencies": {
       "eonasdan-bootstrap-datetimepicker": "^4.15.35",
