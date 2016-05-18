@@ -59,7 +59,7 @@
   "jspm": {
     "registry": "npm",
     "main": "index",
-    "format": "system",
+    "format": "register",
     "directories": {
       "dist": "dist/system"
     },
